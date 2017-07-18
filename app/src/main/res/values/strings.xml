@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">ResumeEditor</string>
+    <string name="user_name">Emma</string>
+    <string name="email">emmaz@mjsearch.me</string>
+    <string name="education">Education</string>
+    <string name="project">Project</string>
+    <string name="experience">Experience</string>
+    <string name="school_name">USC</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save</string>
+    <string name="edit_education">edit_education</string>
+    <string name="edit_experience">edit_experience</string>
+    <string name="edit_project">edit_project</string>
+
+    <string name="email_hint">Your email</string>
+    <string name="name_hint">Your name</string>
+
+</resources>

@@ -1,0 +1,158 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiuzhang.guojing.awesomeresume.com.mjsearch.emma.resumeeditor.MainActivity$MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/spacing_small"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user_name"
+                    android:textSize="@dimen/caption_text_size"/>
+
+                <ImageButton
+                    android:id="@+id/edit_basic_info"
+                    android:layout_width="@dimen/icon_button_size"
+                    android:layout_height="@dimen/icon_button_size"
+                    android:src="@drawable/ic_mode_edit_black_18dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="edit_basic_info"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/spacing_xsmall"
+                android:layout_below="@id/user"
+                android:text="@string/email"/>
+
+            <ImageView
+            android:id="@+id/user_picture"
+            android:layout_height="@dimen/user_picture_size"
+            android:layout_width="@dimen/user_picture_size"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/emma"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/title_Education"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/education"
+                android:textSize="@dimen/caption_text_size"/>
+
+            <ImageButton
+                android:id="@+id/add_education_btn"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/ic_add_black_24px"
+                android:contentDescription="Add Education"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/education_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_xsmall">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/title_Project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/project"
+                android:textSize="@dimen/caption_text_size"/>
+
+            <ImageButton
+                android:id="@+id/add_project_btn"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
+                android:src="@drawable/ic_add_black_24px"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Add_Project"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/project_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_xsmall">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/title_Experience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/experience"
+                android:textSize="@dimen/caption_text_size"/>
+
+            <ImageButton
+                android:id="@+id/add_experience_btn"
+                android:layout_width="@dimen/icon_button_size"
+                android:layout_height="@dimen/icon_button_size"
+                android:src="@drawable/ic_add_black_24px"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Add_Experience"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/experience_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"/>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
